@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+  <!-- A screen: shown on the caller's display by register_ticket (tools/index.ts) while it runs,
+       then with the ticket's number. The form sends a correction back to the agent. -->
+  <style>
+    body { font: 15px/1.4 system-ui, sans-serif; margin: 0; padding: 16px; color: #111; }
+    h1 { font-size: 16px; margin: 0 0 4px; }
+    p.sub { margin: 0 0 12px; color: #666; font-size: 12px; }
+    label { display: block; font-size: 12px; color: #555; margin-top: 10px; }
+    input { width: 100%; box-sizing: border-box; font: inherit; padding: 6px 8px; border: 1px solid #ccc; border-radius: 6px; }
+    .ticket { font-weight: 600; }
+    button { margin-top: 14px; font: inherit; padding: 6px 14px; border: 0; border-radius: 6px; background: #111; color: #fff; }
+  </style>
+</head>
+<body>
+  <h1>Your ticket <span class="ticket" data-field="ticket"></span></h1>
+  <p class="sub" data-when="running">Saving…</p>
+  <p class="sub" data-when="done"><span data-field="status"></span>. Fix anything that's wrong.</p>
+  <p class="sub" data-when="error">That didn't save. Tell Sam, or try again.</p>
+  <form>
+    <label>Name <input name="name" data-field="name"></label>
+    <label>Order number <input name="order" data-field="order"></label>
+    <label>Issue <input name="issue" data-field="issue"></label>
+    <button>Correct it</button>
+  </form>
+</body>
+</html>
