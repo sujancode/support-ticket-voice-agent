@@ -1,4 +1,4 @@
-import { defineTools } from "@voice-agent/sdk";
+import { defineTools } from "polka-cli";
 
 // The ticket, registered as the call goes. Its screen (screens/show_ticket.html) is on the caller's
 // display from the moment it is called, and shows the ticket's number when it is done.

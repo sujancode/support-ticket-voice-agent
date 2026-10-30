@@ -1,4 +1,4 @@
-# Support ticket desk: a voice agent with a screen
+# Support ticket desk: a dot with a screen
 
 A support line that registers a ticket while it talks. Each time you give a detail, the agent calls
 its `register_ticket` tool (`tools/index.ts`), and the tool's screen (`screens/show_ticket.html`)
@@ -7,7 +7,7 @@ there and the agent uses your correction.
 
 ## Try it
 
-Open the console link `voiceagent deploy` prints (or Projects → this project → Talk to it),
+Open the console link `polka deploy` prints (or Projects → this project → Talk to it),
 press **Start conversation**, wear headphones, and say each line, pausing after it:
 
 | You say | What you should see |

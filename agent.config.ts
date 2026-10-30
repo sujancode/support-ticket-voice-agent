@@ -1,4 +1,4 @@
-import { defineAgent } from "@voice-agent/sdk";
+import { defineAgent } from "polka-cli";
 
 // A support desk that registers a ticket while it talks: each time the caller gives a detail, the
 // agent calls register_ticket (tools/index.ts), whose screen (screens/show_ticket.html) shows the
